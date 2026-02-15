@@ -6,6 +6,5 @@
     "strict": true,
     "moduleResolution": "Bundler"
   },
-  "include": ["src"],
-  "exclude": ["vite.config.ts"]
+  "include": ["src"]
 }
