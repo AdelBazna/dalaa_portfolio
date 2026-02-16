@@ -34,19 +34,19 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ id, title, subtitle }: 
       '/55.png'
     ],
     'dressing-room': [
-      '/1.png', 
-      '/2(2).png',
-      '/3.png',
-      '/4.png'
+      '/1.jpg', 
+      '/2(2).jpg',
+      '/3.jpg',
+      '/4.jpg'
     ],
     'kitchen': [
-      '/k1.png',
-      '/k2.png',
+      '/k1.jpg',
+      '/k2.jpg',
       // Pic 3 deleted as requested
-      '/k3.png',
-      '/k4.png',
-      '/k5.png',
-      '/k6.png'
+      '/k3.jpg',
+      '/k4.jpg',
+      '/k5.jpg',
+      '/k6.jpg'
     ],
     'girls-bedroom': [
       '/g1.png',
@@ -56,23 +56,23 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ id, title, subtitle }: 
       '/g5.png'
     ],
     'beauty-salon': [
-      '/b1.png',
-      '/b2.png',
-      '/b3.png',
-      '/b4.png',
-      '/b5.png',
-      '/b6.png',
-      '/b7.png',
-      '/b8.png',
-      '/b9.png',
-      '/b10.png'
+      '/b1.jpg',
+      '/b2.jpg',
+      '/b3.jpg',
+      '/b4.jpg',
+      '/b5.jpg',
+      '/b6.jpg',
+      '/b7.jpg',
+      '/b8.jpg',
+      '/b9.jpg',
+      '/b10.jpg'
     ],
     'exhibition-booth': [
-      '/e1.png',
-      '/e2.png',
-      '/e3.png',
-      '/e4.png',
-      '/e5.png'
+      '/e1.jpg',
+      '/e2.jpg',
+      '/e3.jpg',
+      '/e4.jpg',
+      '/e5.jpg'
     ]
   };
 
