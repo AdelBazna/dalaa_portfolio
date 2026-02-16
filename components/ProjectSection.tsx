@@ -8,7 +8,7 @@ interface ProjectSectionProps {
   subtitle?: string;
 }
 
-const ProjectSection: React.FC<ProjectSectionProps> = ({ id, title, subtitle }) => {
+const ProjectSection: React.FC<ProjectSectionProps> = ({ id, title, subtitle }: ProjectSectionProps) => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
@@ -27,52 +27,52 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ id, title, subtitle }) 
   // Project Images Data
   const projectImages: Record<string, string[]> = {
     'academic': [
-      'https://lh3.googleusercontent.com/d/1w0OyrJDx5Kiyz72cMpdKJ71DR0qzPwXP',
-      'https://lh3.googleusercontent.com/d/1dU7arw8A0uUDt4EhWTknaJ2Qd2kKBlSa',
-      'https://lh3.googleusercontent.com/d/1KmmLXlpfiGHwsnQeNgufPybp-nPeMKOZ',
-      'https://lh3.googleusercontent.com/d/1mhTFteiETCb-IUSei8Dt5RddjEh-017X',
-      'https://lh3.googleusercontent.com/d/1hCLP2OXK3xe-CTF45EBr4AOufoef0Z3Q'
+      '/11.png',
+      '/22.png',
+      '/33.png',
+      '/44.png',
+      '/55.png'
     ],
     'dressing-room': [
-      'https://lh3.googleusercontent.com/d/187CWbOd_ogmA88bm-2DFsUGTVTF5HbWR', 
-      'https://lh3.googleusercontent.com/d/1eXkgYe_I9RdIoEgPNLLRSNmi7ZR5UvTA',
-      'https://lh3.googleusercontent.com/d/1W3SCNtaiNW2i-cD7rg8RnqfKPjgzIaSI',
-      'https://lh3.googleusercontent.com/d/16EvASo-qYMZ3kos3sB8vuNZTHHPG4qT9'
+      '/1.png', 
+      '/2(2).png',
+      '/3.png',
+      '/4.png'
     ],
     'kitchen': [
-      'https://lh3.googleusercontent.com/d/1i2vS-DKRf9DmgBgN-ZrnVw7xM5QvmpNl',
-      'https://lh3.googleusercontent.com/d/13D5t4OQmhC2ohXc06uaVeha5BKCtPKue',
+      '/k1.png',
+      '/k2.png',
       // Pic 3 deleted as requested
-      'https://lh3.googleusercontent.com/d/1d1m3LgMbtjMyr8_21fKhJJYpycbvGzdP',
-      'https://lh3.googleusercontent.com/d/18OeJAYXNwJZxLmyaGdjzvXfXs92flUN0',
-      'https://lh3.googleusercontent.com/d/1yByi7O5EspTrjjSwk31xJs4yzzjC8OCt',
-      'https://lh3.googleusercontent.com/d/1eRzCavN8jTnH0873qEsiWLLH4LMUHkkH'
+      '/k3.png',
+      '/k4.png',
+      '/k5.png',
+      '/k6.png'
     ],
     'girls-bedroom': [
-      'https://lh3.googleusercontent.com/d/1Dw-0CfEhnfxRCWPxG7fCe2BhaUVv7v5s',
-      'https://lh3.googleusercontent.com/d/1c7_XyR8ixPApspyEOcrrObLKGfD_R3T_',
-      'https://lh3.googleusercontent.com/d/1-WIclpsznceVgzTG73ySEmxrLQrEg_se',
-      'https://lh3.googleusercontent.com/d/1C4rWSMIN-nGjSW1tSu-s2jtk83VADdnD',
-      'https://lh3.googleusercontent.com/d/1jvz_3VBjLsA7-3mC5ovLsRMsa0pWxCDZ'
+      '/g1.png',
+      '/g2.png',
+      '/g3.png',
+      '/g4.png',
+      '/g5.png'
     ],
     'beauty-salon': [
-      'https://lh3.googleusercontent.com/d/1tKfPxxdWznFNsBTDcd0lKHVRIWDNObIM',
-      'https://lh3.googleusercontent.com/d/1RwZx_Fhgi6dOBMybvsGoZELL1KvqjKjp',
-      'https://lh3.googleusercontent.com/d/1cE1SQJVkeaHZ0TqR4v09sxnWsf4o2Cpx',
-      'https://lh3.googleusercontent.com/d/1ZQDmSeIhrV_EvXt9T-SvRcxITQa2E3Ff',
-      'https://lh3.googleusercontent.com/d/1aI_Gl4Zj3OIlflcI1o4XfaKua7khTXWu',
-      'https://lh3.googleusercontent.com/d/1eAKGuf-7R6QvrkUBCzVxcL1Qvspg2e_E',
-      'https://lh3.googleusercontent.com/d/1QUfbMMUtg9Y0yFEmXuRU-12u8N_rS05X',
-      'https://lh3.googleusercontent.com/d/1-DlDmF8ivaurssf7vl1LvldxlOgdg6BA',
-      'https://lh3.googleusercontent.com/d/1HidIkUAk9SItmYz3Ngu0-WnlHqzetQ_L',
-      'https://lh3.googleusercontent.com/d/1icgBYFxzgylX_R9SzbaF3sX5VZLcJ5C5'
+      '/b1.png',
+      '/b2.png',
+      '/b3.png',
+      '/b4.png',
+      '/b5.png',
+      '/b6.png',
+      '/b7.png',
+      '/b8.png',
+      '/b9.png',
+      '/b10.png'
     ],
     'exhibition-booth': [
-      'https://lh3.googleusercontent.com/d/1dtbwmX4EwfLreWwqvkA74RxhxhNKtPIK',
-      'https://lh3.googleusercontent.com/d/1KNrNgnCDt7fXqU61TOxKcoe7APAR5MKM',
-      'https://lh3.googleusercontent.com/d/1txG1eI_yaT-IT8NoSgsUQjji2czzhvb-',
-      'https://lh3.googleusercontent.com/d/1agg7tSvPvEY1_Q-70afs6PGnYwNEfrxR',
-      'https://lh3.googleusercontent.com/d/1nrPjHn7PVHj4WR1meejQeVKetihwkR-d'
+      '/e1.png',
+      '/e2.png',
+      '/e3.png',
+      '/e4.png',
+      '/e5.png'
     ]
   };
 
