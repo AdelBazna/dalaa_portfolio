@@ -35,7 +35,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ id, title, subtitle }: 
     ],
     'dressing-room': [
       '/1.jpg', 
-      '/2(2).jpg',
+      '/2-2.jpg',
       '/3.jpg',
       '/4.jpg'
     ],
@@ -49,11 +49,11 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ id, title, subtitle }: 
       '/k6.jpg'
     ],
     'girls-bedroom': [
-      '/g1.png',
-      '/g2.png',
-      '/g3.png',
-      '/g4.png',
-      '/g5.png'
+      '/g1.jpg',
+      '/g2.jpg',
+      '/g3.jpg',
+      '/g4.jpg',
+      '/g5.jpg'
     ],
     'beauty-salon': [
       '/b1.jpg',
